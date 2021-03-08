@@ -1,0 +1,27 @@
+<%= javascript_pack_tag 'weather' %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+         <h1>John's Weather App</h1>
+         <p>Type in your city below and find out what the weather is like. Simple!</p>
+         <p id="prompt">Enter Your City: <input type="text" placeholder="City"> <input id="search" type="submit" value="Find Weather"></p>
+    </header>
+
+    <main>
+        <div id="forecast">
+            <h3 id="name"></h3>
+            <h3 id="temperature"></h3>
+        </div>
+    </main>
+</body>
+</html>
