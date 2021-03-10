@@ -9,4 +9,11 @@ function domReady(fn) {
   
   domReady(() => console.log("DOM is ready, come and get it!"));
 
-  alert('JS is loaded');
+ document.addEventListener('DOMContentLoaded', function() {
+   const searchButton = document.getElementById('weathersearch')
+   const searchCity = document.getElementById('searchcity');
+   searchButton.addEventListener('click', function() {
+     console.log('CLICK!');
+     console.log(searchCity.value);
+   })
+ })
