@@ -4,6 +4,10 @@ class WeatherController < ApplicationController
 
     def search
         city = find_weather(params[:city])
+        puts city
+        @city = city["name"]
+        @weather = city["weather"]
+        @description = @weather[0]["description"]
     end
 
     def find_weather(name)
