@@ -3,7 +3,7 @@
 <%= form_with(url: search_path, method: :get, local: true) do %>
     <%= label_tag :city, 'Enter your city here:' %>
     <%= text_field_tag :city, nil, placeholder: 'Eg. Denver', id: 'searchcity' %>
-    <%= button_tag(type: 'button', id: 'weathersearch') do %>
+    <%= button_tag(type: 'submit', id: 'weathersearch') do %>
         <%= content_tag(:strong, 'Find Weather!') %>
     <% end %>
 <% end %>
